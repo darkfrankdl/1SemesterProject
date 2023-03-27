@@ -3,7 +3,6 @@ package model;
 /**
  * @Description En abstrakt superklasse, som indeholder informationer,
  * der anvendes af dens to subklasser.
- * @author Benjamin Andersen, Daniel Lundt, Lærke Imeland, Martin Uggerholm.
  * @Date 17/12/2021
  * @Version 1.0
  */

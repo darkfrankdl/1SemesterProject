@@ -7,7 +7,6 @@ import model.ProductCon;
 
 /**
  * @Description Generering af testdate til systemet.
- * @author Benjamin Andersen, Daniel Lundt, Lærke Imeland, Martin Uggerholm.
  * @Date 17/12/2021
  * @Version 1.0
  */
@@ -17,7 +16,7 @@ public class GenerateTestData {
 		ProductCon productCon = ProductCon.getInstance();
 		CustomerCon customerCon = CustomerCon.getInstance();
 		
-		// Repræsentere et login fra en bruger.
+		// Reprï¿½sentere et login fra en bruger.
 		LoginCtrl.getInstance();
 		
 		Product product1 = new Product("Hammer", 100d, "DIY", 200, "1");

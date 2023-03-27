@@ -2,9 +2,9 @@ package ctrl;
 import model.Employee;
 
 /**
- * @Description Indeholder den nuværende medarbejder som er logget ind.
+ * @Description Indeholder den nuvï¿½rende medarbejder som er logget ind.
  * 				Dette er en singleton.
- * @author Benjamin Andersen, Daniel Lundt, Lærke Imeland, Martin Uggerholm.
+
  * @Date 17/12/2021
  * @Version 1.0
  */

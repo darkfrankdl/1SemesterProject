@@ -5,7 +5,6 @@ import java.util.List;
 /**
  * @Description En container, som indeholder kunde objekter.
  * 				Dette er en singleton.
- * @author Benjamin Andersen, Daniel Lundt, Lærke Imeland, Martin Uggerholm.
  * @Date 17/12/2021
  * @Version 1.0
  */
@@ -26,9 +25,8 @@ public class CustomerCon {
 	}
 	
 	/**
-	 * @Description Tilføjer en kunde til listen over kunder.
+	 * @Description Tilfï¿½jer en kunde til listen over kunder.
 	 * @param c Customer
-	 * @author Benjamin Andersen, Daniel Lundt, Lærke Imeland, Martin Uggerholm.
 	 * @Date 17/12/2021
 	 * @Version 1.0
 	 */
@@ -40,7 +38,6 @@ public class CustomerCon {
 	/**
 	 * @Description Finder en kunde ud fra customerID.
 	 * @param customerID int
-	 * @author Benjamin Andersen, Daniel Lundt, Lærke Imeland, Martin Uggerholm.
 	 * @Date 17/12/2021
 	 * @Version 1.0
 	 */
@@ -48,15 +45,15 @@ public class CustomerCon {
 		Customer customer = null;
 		boolean search = true;
 		
-		// får fat i containeren og ligger den midlertidigt lokalt.
+		// fï¿½r fat i containeren og ligger den midlertidigt lokalt.
 		CustomerCon container = getInstance();
 		
 		for(int i  = 0; search && i<container.customers.size(); i++) {
 			// finder containerens liste
 			List<Customer> tempCustomers = container.customers;
-			// får fat i customer objekter i listen 
+			// fï¿½r fat i customer objekter i listen 
 			Customer tempCustomer = tempCustomers.get(i);
-			// får fat i hver customer objekters id'er
+			// fï¿½r fat i hver customer objekters id'er
 			int id = tempCustomer.getCustomerID();
 			// sammenligner 
 			if(id==customerID) {

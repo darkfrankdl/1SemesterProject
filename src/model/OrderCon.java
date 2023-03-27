@@ -5,7 +5,6 @@ import java.util.List;
 
 /**
  * @Description En container, som indeholder ordre objekter.
- * @author Benjamin Andersen, Daniel Lundt, Lærke Imeland, Martin Uggerholm.
  * @Date 17/12/2021
  * @Version 1.0
  */
@@ -30,7 +29,7 @@ public class OrderCon {
 		return new ArrayList<Order>(orders);
 	}
 	
-	//giver ordren et ordrenummer når den tilføjes til containeren/orders listen.
+	//giver ordren et ordrenummer nï¿½r den tilfï¿½jes til containeren/orders listen.
 	public boolean addOrder(Order o) {
 		o.setID(id++);
 		return this.orders.add(o);

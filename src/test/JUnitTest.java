@@ -16,7 +16,6 @@ import model.ProductCon;
 
 /**
  * @Description En JUnit test af use casen Create Order.
- * @author Benjamin Andersen, Daniel Lundt, Lærke Imeland, Martin Uggerholm.
  * @Date 17/12/2021
  * @Version 1.0
  */
@@ -34,7 +33,7 @@ public class JUnitTest {
 	public static void setupBefore() {
 		productCon = ProductCon.getInstance();
 		customerCon = CustomerCon.getInstance();
-		// Repræsentere et login fra en bruger.
+		// Reprï¿½sentere et login fra en bruger.
 		loginCtrl = LoginCtrl.getInstance();
 		orderCtrl = new OrderCtrl();
 		orderCon = OrderCon.getInstance();
@@ -62,21 +61,21 @@ public class JUnitTest {
 	public void setup() {
 	}
 	
-	// Tester om den ønskede employee bliver føjet til ordren under oprettelsen af denne.
+	// Tester om den ï¿½nskede employee bliver fï¿½jet til ordren under oprettelsen af denne.
 	@Test
 	void loggedInEmployeeTest() {
 		assertSame(loginCtrl.getLoggedInEmployee(), orderCtrl.getOrder().getEmployee());
 		
 	}
 	
-	// Tester om den ønskede customer bliver føjet til ordren korrekt.
+	// Tester om den ï¿½nskede customer bliver fï¿½jet til ordren korrekt.
 	@Test
 	void customerTest() {
 		orderCtrl.addCustomer(1);
 		assertSame(c1, orderCtrl.getOrder().getCustomer());
 	}
 	
-	// Tester de forskellige grænseværdier omkring stock for et specifikt produkt, samt om det bliver tilføjet som forventet. 
+	// Tester de forskellige grï¿½nsevï¿½rdier omkring stock for et specifikt produkt, samt om det bliver tilfï¿½jet som forventet. 
 	@Test
 	void productTest() {
 		assertFalse(orderCtrl.addProduct("1", -20));

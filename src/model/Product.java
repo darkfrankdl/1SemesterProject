@@ -2,7 +2,6 @@ package model;
 
 /**
  * @Description Indeholder informationer om produkter.
- * @author Benjamin Andersen, Daniel Lundt, Lærke Imeland, Martin Uggerholm.
  * @Date 17/12/2021
  * @Version 1.0
  */

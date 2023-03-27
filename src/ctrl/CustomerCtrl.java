@@ -4,7 +4,6 @@ import model.CustomerCon;
 
 /**
  * @Description Styrer alt der sker med kunder.
- * @author Benjamin Andersen, Daniel Lundt, Lærke Imeland, Martin Uggerholm.
  * @Date 17/12/2021
  * @Version 1.0
  */
@@ -18,7 +17,6 @@ public class CustomerCtrl {
 	/**
 	 * @Description Finder en kunde ud fra customerID
 	 * @param customerID int
-	 * @author Benjamin Andersen, Daniel Lundt, Lærke Imeland, Martin Uggerholm.
 	 * @Date 17/12/2021
 	 * @Version 1.0
 	 */

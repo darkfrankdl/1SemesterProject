@@ -5,7 +5,6 @@ import model.OrderLine;
 
 /**
  * @Description En TUI over Order Menuen.
- * @author Benjamin Andersen, Daniel Lundt, Lærke Imeland, Martin Uggerholm.
  * @Date 17/12/2021
  * @Version 1.0
  */
@@ -22,7 +21,6 @@ public class OrderUI {
 	
 	/**
 	 * @Description Printer en brugervenlig hovedmenu.
-	 * @author Benjamin Andersen, Daniel Lundt, Lærke Imeland, Martin Uggerholm.
 	 * @Date 17/12/2021
 	 * @Version 1.0
 	 */
@@ -34,8 +32,7 @@ public class OrderUI {
 	}
 	
 	/**
-	 * @Description Sørger for at brugerens input ift. hovedmenuen bliver registreret og skaber en ændring i programmet.
-	 * @author Benjamin Andersen, Daniel Lundt, Lærke Imeland, Martin Uggerholm.
+	 * @Description Sï¿½rger for at brugerens input ift. hovedmenuen bliver registreret og skaber en ï¿½ndring i programmet.
 	 * @Date 17/12/2021
 	 * @Version 1.0
 	 */
@@ -63,9 +60,8 @@ public class OrderUI {
 	}
 
 	/**
-	 * @Description Køres ved input "1" fra hovedmenuen. Sørger for at 
+	 * @Description Kï¿½res ved input "1" fra hovedmenuen. Sï¿½rger for at 
 	 * 				guide brugeren gennem ordre-oprettelses processen step for step. 
-	 * @author Benjamin Andersen, Daniel Lundt, Lærke Imeland, Martin Uggerholm.
 	 * @Date 17/12/2021
 	 * @Version 1.0
 	 */
@@ -78,23 +74,22 @@ public class OrderUI {
 		printOrder();
 		//step 3
 		addProducts(); 
-		//step 4 - sker automatisk, når alle ønskede produkter er tilføjet.
+		//step 4 - sker automatisk, nï¿½r alle ï¿½nskede produkter er tilfï¿½jet.
 		endOrder();
 	}
 	
 	/**
-	 * @Description Step 3, står for at tilføje produkter til ordren ud fra brugerens input.
-	 * @author Benjamin Andersen, Daniel Lundt, Lærke Imeland, Martin Uggerholm.
+	 * @Description Step 3, stï¿½r for at tilfï¿½je produkter til ordren ud fra brugerens input.
 	 * @Date 17/12/2021
 	 * @Version 1.0
 	 */
 	private void addProducts() { 
 		boolean finished = false;
 		
-		//Sørger for at flere produkter kan tilføjes efter hinanden.
+		//Sï¿½rger for at flere produkter kan tilfï¿½jes efter hinanden.
 		while(!finished) {
-			//søger stregkode for produkt...
-			System.out.println("---Tilføj produkt---");
+			//sï¿½ger stregkode for produkt...
+			System.out.println("---Tilfï¿½j produkt---");
 			System.out.println("Indtast stregkode: ");
 			System.out.println("For at afslutte - Tast \"Q\" ");
 			String barcode = textInput.getInput();
@@ -106,7 +101,7 @@ public class OrderUI {
 				System.out.println("Indtast stregkode: ");
 				barcode = textInput.getInput();
 			}
-			//søger antal af produkt...
+			//sï¿½ger antal af produkt...
 			System.out.println("Indtast antal: ");
 			int quantity = textInput.getNumberInput();
 			if(!orderCtrl.addProduct(barcode, quantity)) {
@@ -117,14 +112,13 @@ public class OrderUI {
 	}
 
 	/**
-	 * @Description Step 2, står for at tilføje en customer til ordren ud fra brugerens input.
-	 * @author Benjamin Andersen, Daniel Lundt, Lærke Imeland, Martin Uggerholm.
+	 * @Description Step 2, stï¿½r for at tilfï¿½je en customer til ordren ud fra brugerens input.
 	 * @Date 17/12/2021
 	 * @Version 1.0
 	 */
 	private void addCustomer() {
-		//søger customer...
-		System.out.println("---Tilføj kunde---");
+		//sï¿½ger customer...
+		System.out.println("---Tilfï¿½j kunde---");
 		System.out.println("Indtast kundeID: ");
 		int id = textInput.getNumberInput();
 		
@@ -138,9 +132,8 @@ public class OrderUI {
 	}
 
 	/**
-	 * @Description printOrder står for at printe en opdateret ordre i tui'en, 
-	 * 				sådan at brugeren kan følge med hvordan ordren udvikler sig i takt med at tingene tilføjes.
-	 * @author Benjamin Andersen, Daniel Lundt, Lærke Imeland, Martin Uggerholm.
+	 * @Description printOrder stï¿½r for at printe en opdateret ordre i tui'en, 
+	 * 				sï¿½dan at brugeren kan fï¿½lge med hvordan ordren udvikler sig i takt med at tingene tilfï¿½jes.
 	 * @Date 17/12/2021
 	 * @Version 1.0
 	 */
@@ -159,8 +152,7 @@ public class OrderUI {
 	}
 	
 	/**
-	 * @Description Step 4, afslutter ordren ved at lægge den i sin container og printe den sidste status (kvitering)
-	 * @author Benjamin Andersen, Daniel Lundt, Lærke Imeland, Martin Uggerholm.
+	 * @Description Step 4, afslutter ordren ved at lï¿½gge den i sin container og printe den sidste status (kvitering)
 	 * @Date 17/12/2021
 	 * @Version 1.0
 	 */

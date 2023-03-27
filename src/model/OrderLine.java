@@ -2,8 +2,7 @@ package model;
 
 /**
  * @Description Indeholder informationer om et bestemt produkt og antallet af produkter,
- * som tilføjes til en ordre.
- * @author Benjamin Andersen, Daniel Lundt, Lærke Imeland, Martin Uggerholm.
+ * som tilfï¿½jes til en ordre.
  * @Date 17/12/2021
  * @Version 1.0
  */
@@ -12,7 +11,7 @@ public class OrderLine {
 	private double subtotal;
 	private Item i;
 	
-	//Køres når et nyt produkt tilføjes til ordrelinjen.
+	//Kï¿½res nï¿½r et nyt produkt tilfï¿½jes til ordrelinjen.
 	public OrderLine(Item i, int quantity) {
 		this.i = i;
 		this.quantity = quantity;
@@ -33,8 +32,8 @@ public class OrderLine {
 		return i;
 	}
 	
-	//Køres når et produkt, som allerede er i en ordrelinje på ordren, bliver tilføjet igen og dermed ikke skal oprettes som ny linje
-	//men istedet ændre på mængden af den tidligere ordrelinje.
+	//Kï¿½res nï¿½r et produkt, som allerede er i en ordrelinje pï¿½ ordren, bliver tilfï¿½jet igen og dermed ikke skal oprettes som ny linje
+	//men istedet ï¿½ndre pï¿½ mï¿½ngden af den tidligere ordrelinje.
 	public void setQuantity(int q) {
 		quantity += q;
 		setSubTotal();

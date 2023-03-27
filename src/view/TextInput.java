@@ -2,8 +2,7 @@ package view;
 import java.util.Scanner;
 
 /**
- * @Description Står for at registrerer brugerens input.
- * @author Benjamin Andersen, Daniel Lundt, Lærke Imeland, Martin Uggerholm.
+ * @Description Stï¿½r for at registrerer brugerens input.
  * @Date 17/12/2021
  * @Version 1.0
  */
@@ -19,9 +18,8 @@ public class TextInput {
 	}
 	
 	/**
-	 * @Description Står for at konvertere brugerens input fra String til Integer. 
-	 * 				Taster brugeren forkerte input, kører metoden iterativt indtil et validt input kan returneres.
-	 * @author Benjamin Andersen, Daniel Lundt, Lærke Imeland, Martin Uggerholm.
+	 * @Description Stï¿½r for at konvertere brugerens input fra String til Integer. 
+	 * 				Taster brugeren forkerte input, kï¿½rer metoden iterativt indtil et validt input kan returneres.
 	 * @Date 17/12/2021
 	 * @Version 1.0
 	 */

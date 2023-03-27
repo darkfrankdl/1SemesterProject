@@ -5,7 +5,6 @@ import java.util.List;
 
 /**
  * @Description En subklasse af Sale, som indeholder informationer om ordre.
- * @author Benjamin Andersen, Daniel Lundt, Lærke Imeland, Martin Uggerholm.
  * @Date 17/12/2021
  * @Version 1.0
  */
@@ -63,7 +62,7 @@ public class Order extends Sale {
 		this.ols = ols;
 	}
 	
-	// Tilføjer en customer til ordren.
+	// Tilfï¿½jer en customer til ordren.
 	public void addCustomer(Customer c) {
 		if(c != null) {
 			this.customer = c; 
@@ -71,24 +70,23 @@ public class Order extends Sale {
 	}
 	
 	/**
-	 * @Description Tilføjer en ordrelinje plus et tilhørende produkt til ordren.
-	 * @param i den Item man ønsker at fæje til ordren.
-	 * @param quantity den mængde af det Item man ønsker at tilføje til ordren.
-	 * @author Benjamin Andersen, Daniel Lundt, Lærke Imeland, Martin Uggerholm.
+	 * @Description Tilfï¿½jer en ordrelinje plus et tilhï¿½rende produkt til ordren.
+	 * @param i den Item man ï¿½nsker at fï¿½je til ordren.
+	 * @param quantity den mï¿½ngde af det Item man ï¿½nsker at tilfï¿½je til ordren.
 	 * @Date 17/12/2021
 	 * @Version 1.0
 	 */
 	public boolean addOrderLine(Item i, int quantity) {
 		OrderLine temp = findOLByItem(i);
-		// Hvis et produkt allerede eksistere i en ordrelinje i forvejen køres denne.
+		// Hvis et produkt allerede eksistere i en ordrelinje i forvejen kï¿½res denne.
 		if(temp != null && quantity > 0 && i.getStock() >= quantity) {
 			temp.setQuantity(quantity);
 			setTotal(i.getPrice() * quantity);
 			return true;
 		}
 		else {
-			// Betingelsen i nedenstående if(), sørger for, at det ikke er muligt at købe 0 eller færre produkter 
-			// eller købe flere produkter end der er på lager.
+			// Betingelsen i nedenstï¿½ende if(), sï¿½rger for, at det ikke er muligt at kï¿½be 0 eller fï¿½rre produkter 
+			// eller kï¿½be flere produkter end der er pï¿½ lager.
 			if(quantity > 0 && i != null && i.getStock() >= quantity) {
 				OrderLine ol = new OrderLine(i,quantity);
 				addOrderLine(ol);
@@ -100,16 +98,15 @@ public class Order extends Sale {
 		}
 	}
 	
-	// Tilføjer en given ordrelinje (ol) til listen ols.
+	// Tilfï¿½jer en given ordrelinje (ol) til listen ols.
 	private void addOrderLine(OrderLine ol) {
 		this.ols.add(ol);
 		setTotal(ol.getSubtotal());
 	}
 	
 	/**
-	 * @Description Finder og returnere den tilhørende ordrelinje til et givet Item.
-	 * @param i det Item man ønsker at tjekke om allerede eksisterer i en ordrelinje.
-	 * @author Benjamin Andersen, Daniel Lundt, Lærke Imeland, Martin Uggerholm.
+	 * @Description Finder og returnere den tilhï¿½rende ordrelinje til et givet Item.
+	 * @param i det Item man ï¿½nsker at tjekke om allerede eksisterer i en ordrelinje.
 	 * @Date 17/12/2021
 	 * @Version 1.0
 	 */

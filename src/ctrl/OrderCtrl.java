@@ -5,8 +5,7 @@ import model.Order;
 import model.OrderCon;
 
 /**
- * @Description Står for alt, som har med ordre at gøre.
- * @author Benjamin Andersen, Daniel Lundt, Lærke Imeland, Martin Uggerholm.
+ * @Description Stï¿½r for alt, som har med ordre at gï¿½re.
  * @Date 17/12/2021
  * @Version 1.0
  */
@@ -27,7 +26,6 @@ public class OrderCtrl {
 	/**
 	 * @Description Opretter en ordre, hvor en medarbejder tilknyttes.
 	 * 				Herefter returneres ordren.
-	 * @author Benjamin Andersen, Daniel Lundt, Lærke Imeland, Martin Uggerholm.
 	 * @Date 17/12/2021
 	 * @Version 1.0
 	 */
@@ -40,10 +38,9 @@ public class OrderCtrl {
 	} 
 	
 	/**
-	 * @Description Laver et metodekald på ordren, som tilføjer en kunde ud fra customerID,
-	 * 				så længe den findes i containeren.
+	 * @Description Laver et metodekald pï¿½ ordren, som tilfï¿½jer en kunde ud fra customerID,
+	 * 				sï¿½ lï¿½nge den findes i containeren.
 	 * @param customerID int
-	 * @author Benjamin Andersen, Daniel Lundt, Lærke Imeland, Martin Uggerholm.
 	 * @Date 17/12/2021
 	 * @Version 1.0
 	 */
@@ -52,10 +49,9 @@ public class OrderCtrl {
 	}
 	
 	/**
-	 * @Description Laver et metodekald på ordren, som tilføjer en OrderLine ud fra det produkt,
-	 * 				og kvantiteten, som tilføjes i parameterne.
+	 * @Description Laver et metodekald pï¿½ ordren, som tilfï¿½jer en OrderLine ud fra det produkt,
+	 * 				og kvantiteten, som tilfï¿½jes i parameterne.
 	 * @param barcode String, quantity int
-	 * @author Benjamin Andersen, Daniel Lundt, Lærke Imeland, Martin Uggerholm.
 	 * @Date 17/12/2021
 	 * @Version 1.0
 	 */
@@ -65,7 +61,6 @@ public class OrderCtrl {
 	
 	/**
 	 * @Description Afslutter ordren, og putter den i containeren.
-	 * @author Benjamin Andersen, Daniel Lundt, Lærke Imeland, Martin Uggerholm.
 	 * @Date 17/12/2021
 	 * @Version 1.0
 	 */
