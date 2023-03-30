@@ -9,3 +9,4 @@ this project was about creating a POS system, where you could sell products to c
 - text based UI interface
 - implementing singleton pattern
 - implementing unit tests 
+- coding with regards to GRASP
