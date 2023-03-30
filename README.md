@@ -5,3 +5,5 @@ this project was about creating a POS system, where you could sell products to c
 # Things Learned
 - implementing a 3 layer architecture
 - implementing the orderline pattern : customer->order->orderline->product
+- implementing a composite pattern
+- text based UI interface
