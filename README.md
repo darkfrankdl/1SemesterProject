@@ -7,3 +7,5 @@ this project was about creating a POS system, where you could sell products to c
 - implementing the orderline pattern : customer->order->orderline->product
 - implementing a composite pattern
 - text based UI interface
+- implementing singleton pattern
+- implementing unit tests 
