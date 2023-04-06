@@ -1,6 +1,6 @@
 # 1SemesterProject - sale system with a loan system ontop
 
-#Overview
+# Overview
 
 this project was about creating a POS system, where you could sell products to customers and customers could also loan machines from the store, moreover products in store could become loan items. 
 
