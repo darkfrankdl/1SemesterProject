@@ -20,4 +20,9 @@ Singleton pattern: only one instance of the object
 - implementing singleton pattern
 - implementing unit tests 
 - coding with regards to GRASP
-- coupling and cohesion implementation. 
+
+# Diagrams
+if you like to view the diagrams then look under the folder of UML-Diagrams
+- domain model
+- interaction diagram for a single use case 
+- class design diagram 
