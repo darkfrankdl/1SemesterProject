@@ -56,5 +56,5 @@ Singleton pattern: only one instance of the object
 # Testing info
 
 in this project there is used the JUnit testing in Java. 
-there is tested 2 small adding methods. 
-there is a single Boundry test for products
+- there is tested 2 small adding methods. 
+- there is a single Boundry test for products
