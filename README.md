@@ -1,6 +1,7 @@
 # 1SemesterProject - sale system with a loan system ontop
 
 #Overview
+
 this project was about creating a POS system, where you could sell products to customers and customers could also loan machines from the store, moreover products in store could become loan items. 
 
 # patterns implemented 
@@ -26,3 +27,13 @@ if you like to view the diagrams then look under the folder of UML-Diagrams
 - domain model
 - interaction diagram for a single use case 
 - class design diagram 
+
+# Usage instructions
+
+- download the project 
+- open in eclipse 
+- run from the MainMenuUI file under src -> view
+
+#Project status
+
+currently no longer maintained but may come back to it if time allows
